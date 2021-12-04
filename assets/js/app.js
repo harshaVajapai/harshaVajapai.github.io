@@ -10,12 +10,13 @@ function typeWriter(){
     }
 }
 
+
 function loadContent(event,page){
     var content = document.getElementsByClassName("content");
     for(var i=0;i<content.length;i++){
         content[i].style.display="none";
     }
-    var nav_link = document.getElementsByClassName("nav-link");
+    var nav_link = document.getElementsByClassName("navlink");
     var hide_nav_link = document.getElementsByClassName("hide-nav-link");
     for(var i=0;i<nav_link.length;i++){
         nav_link[i].className=nav_link[i].className.replace("active","");
