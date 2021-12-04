@@ -274,7 +274,7 @@ body,html {
     color: white;
     width: fit-content;
     border-bottom: 3px solid #18d26e;
-    font-family: "Poppins";
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
 }
 
