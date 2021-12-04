@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+body{
+    background: url("../imgs/contact-bg.jpg");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-delay: 1s;
+}
+#outer-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 400px;
+    background:rgba(0, 0, 0, 0.9);
+}
+
+#inner-container{
+    padding: 20px;
+}
+
+.col-md-5{
+    color: rgb(100, 100, 100);
+    background: rgba(255, 255, 255, 0.08);
+    margin: 10px;
+}
+
+.col-md-5 h3{
+    border-bottom: 1px solid #18d26e;
+    font-family: Raleway;
+    max-width: fit-content;
+}
+
+.col-md-5 p{
+    color: white;
+}
+
+.container-fluid{
+    padding: 0px;
+    overflow: hidden;
+}
+
+.icon{
+    font-size: 30px;
+    color: #18d26e;
+}
+
+.social-links{
+    margin: 3px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-links:hover{
+    text-decoration: none;
+    color: #18d26e;
+}

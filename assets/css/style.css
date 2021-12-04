@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 body,html {
     height: 100%;
@@ -26,12 +28,12 @@ body,html {
 }
 
 .nav-bar{
-    background-color: inherit;
+    /* background-color: inherit; */
     width: fit-content;
     float: right;
 }
 
-.nav-link{
+.navlink{
     font-family: 'Raleway', sans-serif;
     border: none;
     outline: none;
@@ -42,12 +44,12 @@ body,html {
     color: rgba(255,255,255,0.7);
 }
 
-.nav-link:hover{
+.navlink:hover{
     cursor: pointer;
     background-color: rgba(0,0,0,0.4);
 }
 
-.nav-link.active{
+.navlink.active{
     background-color: #18d26e;
 }
 
@@ -161,7 +163,24 @@ body,html {
 }
 
 #top-btn{
-    transform: translate(10px,20px);
+    padding-left: 10px;
+    padding-top: 20px;
+    /* transform: translate(10px,20px); */
+    animation-name:move_up_down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move_up_down{
+    0% {
+        transform: translate(0px,0px);
+    }
+    50% {
+        transform: translate(0px,-10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
 }
 
 /* top button styling ends */
@@ -170,7 +189,7 @@ body,html {
 
 #home{
     /* The image used */
-    background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("img_parallax.jpg");
+    background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("../imgs/img_parallax.jpg");
 
     /* Full height */
     height: 100%;
@@ -212,17 +231,89 @@ body,html {
 
 /* Home page styling ends */
 
-#education{
-    background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("demo-bg.jpg");
+#about{
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
 
     /* Full height */
-    height: 100%;
 
     /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: none;
     color: rgba(255,255,255,0.7);
     transition: display 1s;
 }
+
+#about h1{
+    margin: 0px;
+}
+
+/* contact page styling starts */
+
+#contact{
+    background: url("../imgs/contact-bg.jpg");
+    /* Full height */
+    height: 100vh;
+    display: none;
+
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-delay: 1s;
+}
+
+#outer-container{
+    padding-top: 150px;
+    margin-bottom: 50px;
+    height: 400px;
+    background:rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width:770px){
+    #outer-container{
+        padding-top: 30px;
+    }
+}
+
+#inner-container{
+    padding: 20px;
+}
+
+.col-md-5{
+    color: rgb(100, 100, 100);
+    background: rgba(255, 255, 255, 0.08);
+    margin: 10px;
+}
+
+.col-md-5 h3{
+    border-bottom: 1px solid #18d26e;
+    font-family: Raleway;
+    max-width: fit-content;
+}
+
+.col-md-5 p{
+    color: white;
+}
+
+.container-fluid{
+    padding: 0px;
+    overflow: hidden;
+}
+
+.icon{
+    font-size: 30px;
+    color: #18d26e;
+}
+
+.social-links{
+    margin: 3px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-links:hover{
+    text-decoration: none;
+    color: #18d26e;
+}
+
+/* contact page styling ends */
