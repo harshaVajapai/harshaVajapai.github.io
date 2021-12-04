@@ -250,10 +250,8 @@ body,html {
 
 #contact{
     background: url("../imgs/contact-bg.jpg");
-    /* Full height */
-    height: 100vh;
     display: none;
-
+    height: 100%;
     /* Center and scale the image nicely */
     background-attachment: fixed;
     background-position: center;
@@ -263,19 +261,28 @@ body,html {
 }
 
 #outer-container{
-    padding-top: 150px;
-    margin-bottom: 50px;
-    height: 400px;
-    background:rgba(0, 0, 0, 0.9);
+    height: fit-content;
 }
 
 @media (max-width:770px){
     #outer-container{
-        padding-top: 30px;
+        padding-top: 80px;
     }
 }
 
+#inner-container h1{
+    color: white;
+    width: fit-content;
+    border-bottom: 3px solid #18d26e;
+    font-family: "Poppins";
+    margin-bottom: 20px;
+}
+
 #inner-container{
+    background-color: rgb(0,0,0);
+    /* Full height */
+    height: fit-content;
+    max-height: 100%;
     padding: 20px;
 }
 
