@@ -59,3 +59,18 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.display = "none";
 }
+
+// =============================================contact page animations=============================================
+var info_cards = document.getElementsByClassName("info-cards");
+for(var i=0;i<info_cards.length;i++){
+    // selecting the icon which is the child of the particular info card
+    info_cards[i].addEventListener("mouseenter",function(){
+        var icon = this.children[0].children[0].children[0];
+        icon.classList.add("rotate");
+    })
+
+    info_cards[i].addEventListener("mouseleave",function(){
+        var icon = this.children[0].children[0].children[0];
+        icon.classList.remove("rotate");
+    })
+}
