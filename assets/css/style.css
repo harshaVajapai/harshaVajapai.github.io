@@ -232,14 +232,13 @@ body,html {
 /* Home page styling ends */
 
 #about{
-    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
-
-    /* Full height */
-
-    /* Center and scale the image nicely */
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("../imgs/about-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     display: none;
-    color: rgba(255,255,255,0.7);
-    transition: display 1s;
 }
 
 #about h1{
@@ -349,6 +348,43 @@ body,html {
     100%{
         transform: rotateY(360deg);
         transform-origin: center center;
+    }
+}
+
+.float-right{
+    animation-name: float-card-right;
+    animation-duration: 1.5s;
+}
+
+@media (max-width:992px){
+    .float-left{
+        animation-delay: 1s;
+    }
+    .float-right{
+        animation-delay: 1s;
+    }
+}
+
+@keyframes float-card-right{
+    0%{
+        transform: translate(-50px,0px);
+    }
+    100%{
+        transform:translate(0px,0px);
+    }
+}
+
+.float-left{
+    animation-name: float-card-left;
+    animation-duration: 1.5s;
+}
+
+@keyframes float-card-left{
+    0%{
+        transform: translate(50px,0px);
+    }
+    100%{
+        transform:translate(0px,0px);
     }
 }
 
