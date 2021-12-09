@@ -74,3 +74,18 @@ for(var i=0;i<info_cards.length;i++){
         icon.classList.remove("rotate");
     })
 }
+
+var observer = new IntersectionObserver(function (entries) {
+    // isIntersecting is true when element and viewport are overlapping
+    // isIntersecting is false when element and viewport don't overlap
+    if (entries[0].isIntersecting === true){
+        for(var i=0;i<info_cards.length;i++){
+            if(i%2==0){
+                info_cards[i].classList.add("float-right");
+            }
+            else info_cards[i].classList.add("float-left");
+        }
+    }
+}, { threshold: [0] });
+
+observer.observe(document.querySelector("#contact"));
