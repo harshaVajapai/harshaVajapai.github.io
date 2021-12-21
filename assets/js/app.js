@@ -29,6 +29,7 @@ function loadContent(event,page){
     for(var i=0;i<current_link.length;i++){
         current_link[i].className += " active";
     }
+    
 }
 
 
@@ -60,7 +61,13 @@ function closeNav() {
     document.getElementById("myNav").style.display = "none";
 }
 
+// ============================================= About Page =============================================
+
+
+
 // =============================================contact page animations=============================================
+
+
 var info_cards = document.getElementsByClassName("info-cards");
 for(var i=0;i<info_cards.length;i++){
     // selecting the icon which is the child of the particular info card
