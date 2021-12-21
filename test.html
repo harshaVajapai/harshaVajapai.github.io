@@ -16,6 +16,32 @@
     <title>SriHarsha | Portfolio</title>
 </head>
 <body>
+        <div class="hide-nav-icon" onclick="openNav()">
+            <div class="upper"></div>
+            <div class="mid"></div>
+            <div class="lower"></div>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <button class="hide-nav-link active home" onclick="loadContent(event,'home')">Home</button>
+                <button class="hide-nav-link about" onclick="loadContent(event,'about')">About</button>
+                <button class="hide-nav-link projects">Projects</button>
+                <button class="hide-nav-link contact" onclick="loadContent(event,'contact')">Contact</button>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <button class="navlink active home" onclick="loadContent(event,'home')">Home</button>
+            <button class="navlink about" onclick="loadContent(event,'about')">About</button>
+            <button class="navlink projects">Projects</button>
+            <button class="navlink contact" onclick="loadContent(event,'contact')">Contact</button>
+        </div>
+        <div id="arrow" onclick="topFunction()">
+            <div id="top-btn">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+        </div>
     <div id="about" class="content">
         <div class="container" id="profile">
             <h2 id="about-heading">About</h2>
