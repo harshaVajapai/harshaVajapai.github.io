@@ -87,7 +87,7 @@ about_observer.observe(document.querySelector("#hidden-education"));
 
 function showcontent(event){
     event.currentTarget.nextSibling.nextElementSibling.classList.toggle("toggle-display");
-    window.scrollBy(0,500);
+    window.scrollBy(0, 500);
 }
 
 // =============================================contact page animations=============================================
