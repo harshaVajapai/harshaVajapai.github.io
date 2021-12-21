@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow: hidden;
 }
 
 @media (max-width:992px){
@@ -111,12 +112,66 @@ progress::-webkit-progress-bar {
     width: fit-content;
     border-bottom: 3px solid #18d26e;
     font-size: 2.25em;
+    display: inline;
 }
 
 #education{
     padding: 30px;
     margin-top: 30px;
     background-color: rgba(255,255,255,0.05);
+    position: relative;
+}
+
+.toggle-display{
+    display: none;
+}
+
+.down-btn{
+    position: relative;
+    top: 24px;
+    left: 6px;
+    animation-name:move_down_up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move_down_up{
+    0% {
+        transform: translate(0px,0px);
+    }
+    50% {
+        transform: translate(0px,10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+.down-arrow{
+    position: absolute;
+    left: 211px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.down-bar{
+    height: 5px;
+    background-color: #000000;
+    margin: 2px;
+}
+
+.down-bar1{
+    width: 20px;
+    transform: rotate(45deg) translate(-1px,-3px);
+}
+
+.down-bar2{
+    width: 20px;
+    transform: rotate(-45deg) translate(15px,1.8px);
 }
 
 #straight-line{
@@ -260,5 +315,39 @@ progress::-webkit-progress-bar {
 
     #right-pointer1,#right-pointer2{
         left: 54px;
+    }
+}
+
+.float-right{
+    animation-name: float-card-right;
+    animation-duration: 1s;
+}
+
+@keyframes float-card-right{
+    0%{
+        transform: translate(-400px,0px);
+    }
+    60%{
+        transform: translate(40px,0px);
+    }
+    100%{
+        transform:translate(0px,0px);
+    }
+}
+
+.float-left{
+    animation-name: float-card-left;
+    animation-duration: 1s;
+}
+
+@keyframes float-card-left{
+    0%{
+        transform: translate(400px,0px);
+    }
+    60%{
+        transform: translate(-40px,0px);
+    }
+    100%{
+        transform:translate(0px,0px);
     }
 }

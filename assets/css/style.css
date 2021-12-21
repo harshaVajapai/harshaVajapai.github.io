@@ -233,7 +233,7 @@ body,html {
 
 /* Home page styling ends */
 
-#about{
+#about {
     height: fit-content;
     padding: 80px 0px 80px 0px;
     display: none;
@@ -286,7 +286,7 @@ body,html {
     margin-top: 30px;
     height: fit-content;
     background-color: rgba(255,255,255,0.05);
-    padding: 20px;
+    padding: 10px;
 }
 
 #skills-heading{
@@ -299,7 +299,6 @@ body,html {
 
 #skills h4{
     color: #ffffff;
-    font-family: sans-serif;
     padding-top: 20px;
 }
 
@@ -341,18 +340,73 @@ progress::-webkit-progress-bar {
     background-color: #18d26e;
 }
 
+
 /* ============================================= */
 #edu-heading{
     color: #ffffff;
     width: fit-content;
     border-bottom: 3px solid #18d26e;
     font-size: 2.25em;
+    display: inline;
 }
 
 #education{
     padding: 30px;
     margin-top: 30px;
     background-color: rgba(255,255,255,0.05);
+    position: relative;
+}
+
+.toggle-display{
+    display: none;
+}
+
+.down-btn{
+    position: relative;
+    top: 24px;
+    left: 6px;
+    animation-name:move_down_up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move_down_up{
+    0% {
+        transform: translate(0px,0px);
+    }
+    50% {
+        transform: translate(0px,10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+.down-arrow{
+    position: absolute;
+    left: 211px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.down-bar{
+    height: 5px;
+    background-color: #000000;
+    margin: 2px;
+}
+
+.down-bar1{
+    width: 20px;
+    transform: rotate(45deg) translate(-1px,-3px);
+}
+
+.down-bar2{
+    width: 20px;
+    transform: rotate(-45deg) translate(15px,1.8px);
 }
 
 #straight-line{
@@ -390,7 +444,7 @@ progress::-webkit-progress-bar {
     background-color: #18d26e;
     position: absolute;
     left: -10px;
-    top: 480px;
+    top: 470px;
 }
 
 
@@ -409,12 +463,12 @@ progress::-webkit-progress-bar {
 
 #inter-edu{
     left: 64px;
-    top: 261px;
+    top: 258px;
 }
 
 #school-edu{
     left: -460px;
-    top: 430.5px;
+    top: 425.5px;
 }
 
 #right-pointer1{
@@ -443,13 +497,13 @@ progress::-webkit-progress-bar {
     background-color: #ffffff;
     position: absolute;
     left: -70px;
-    top: 480.5px;
+    top: 472.5px;
     transform: rotate(45deg);
 }
 
 @media (max-width:360px){
     #straight-line{
-        left: 3%;
+        left: 20px;
     }
     
     .edu{
@@ -476,7 +530,7 @@ progress::-webkit-progress-bar {
 
 @media (min-width:360px) and (max-width:770px){
     #straight-line{
-        left: 10px;
+        left: 20px;
     }
     #college-edu{
         left: 64px;
@@ -485,12 +539,12 @@ progress::-webkit-progress-bar {
     }
     #inter-edu{
         left: 64px;
-        top: 261px;
+        top: 250px;
         width: 250px;
     }
     #school-edu{
         left: 64px;
-        top: 430.5px;
+        top: 405.5px;
         width: 250px;
     }
 
@@ -609,12 +663,15 @@ progress::-webkit-progress-bar {
 
 .float-right{
     animation-name: float-card-right;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @keyframes float-card-right{
     0%{
         transform: translate(-400px,0px);
+    }
+    60%{
+        transform: translate(40px,0px);
     }
     100%{
         transform:translate(0px,0px);
@@ -623,12 +680,15 @@ progress::-webkit-progress-bar {
 
 .float-left{
     animation-name: float-card-left;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @keyframes float-card-left{
     0%{
         transform: translate(400px,0px);
+    }
+    60%{
+        transform: translate(-40px,0px);
     }
     100%{
         transform:translate(0px,0px);

@@ -29,7 +29,6 @@ function loadContent(event,page){
     for(var i=0;i<current_link.length;i++){
         current_link[i].className += " active";
     }
-    
 }
 
 
@@ -62,8 +61,34 @@ function closeNav() {
 }
 
 // ============================================= About Page =============================================
+var edu_cards = document.getElementsByClassName("outer-edu");
+var about_observer = new IntersectionObserver(function (entries) {
+    // isIntersecting is true when element and viewport are overlapping
+    // isIntersecting is false when element and viewport don't overlap
+    if (entries[0].isIntersecting === true) {
+        if (window.innerWidth >= 770){
+            for (var i = 0; i < edu_cards.length; i++) {
+                if (i % 2 == 0) {
+                    edu_cards[i].classList.add("float-right");
+                }
+                else edu_cards[i].classList.add("float-left");
+            }
+        }
+        else{
+            for(var i=0;i<edu_cards.length;i++){
+                edu_cards[i].classList.add("float-left");
+            }
+        }
+    }
+}, { threshold: [0] });
+
+about_observer.observe(document.querySelector("#hidden-education"));
 
 
+function showcontent(event){
+    event.currentTarget.nextSibling.nextElementSibling.classList.toggle("toggle-display");
+    window.scrollBy(0,500);
+}
 
 // =============================================contact page animations=============================================
 
