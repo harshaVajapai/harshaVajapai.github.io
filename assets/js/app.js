@@ -29,6 +29,7 @@ function loadContent(event,page){
     for(var i=0;i<current_link.length;i++){
         current_link[i].className += " active";
     }
+    document.getElementsByClassName("closebtn")[0].click();
 }
 
 

@@ -151,7 +151,7 @@ body,html {
     height: 50px;
     border-radius: 100%;
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 #bar1{
@@ -236,7 +236,7 @@ body,html {
 
 #about {
     height: fit-content;
-    padding: 80px 0px 80px 0px;
+    padding: 80px 0px 50px 0px;
     display: none;
     background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("../imgs/about-bg.jpg");
     background-position: center;
@@ -365,8 +365,8 @@ progress::-webkit-progress-bar {
 
 .down-btn{
     position: relative;
-    top: 24px;
-    left: 6px;
+    top: 10px;
+    left: 0px;
     animation-name:move_down_up;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -387,31 +387,32 @@ progress::-webkit-progress-bar {
 .down-arrow{
     position: absolute;
     left: 211px;
-    top: 30px;
-    width: 50px;
-    height: 50px;
+    top: 45px;
+    width: 25px;
+    height: 25px;
     background-color: #ffffff;
     border-radius: 100%;
     cursor: pointer;
 }
 
 .down-bar{
-    height: 5px;
+    height: 2px;
     background-color: #000000;
     margin: 2px;
 }
 
 .down-bar1{
-    width: 20px;
-    transform: rotate(45deg) translate(-1px,-3px);
+    width: 10px;
+    transform: rotate(45deg) translate(0px,-3px);
 }
 
 .down-bar2{
-    width: 20px;
-    transform: rotate(-45deg) translate(15px,1.8px);
+    width: 10px;
+    transform: rotate(-45deg) translate(10px,1.8px);
 }
 
 #straight-line{
+    margin-top: 50px;
     height: 650px;
     width: 1px;
     position: relative;
@@ -426,7 +427,7 @@ progress::-webkit-progress-bar {
     background-color: #18d26e;
     position: absolute;
     left: -10px;
-    top: 160px;
+    top: 110px;
 }
 
 #time-line-circle2{
@@ -436,7 +437,7 @@ progress::-webkit-progress-bar {
     background-color: #18d26e;
     position: absolute;
     left: -10px;
-    top: 320px;
+    top: 270px;
 }
 
 #time-line-circle3{
@@ -446,7 +447,7 @@ progress::-webkit-progress-bar {
     background-color: #18d26e;
     position: absolute;
     left: -10px;
-    top: 470px;
+    top: 445px;
 }
 
 
@@ -455,22 +456,22 @@ progress::-webkit-progress-bar {
     background-color: #ffffff;
     width: 400px;
     position: absolute;
-    z-index: 0.5;
+    z-index: 1;
 }
 
 #college-edu{
     left: -460px;
-    top: 108.5px;
+    top: 60.5px;
 }
 
 #inter-edu{
     left: 64px;
-    top: 258px;
+    top: 222px;
 }
 
 #school-edu{
     left: -460px;
-    top: 425.5px;
+    top: 395.5px;
 }
 
 #right-pointer1{
@@ -479,8 +480,9 @@ progress::-webkit-progress-bar {
     background-color: #ffffff;
     position: absolute;
     left: -70px;
-    top: 160.5px;
+    top: 110.5px;
     transform: rotate(45deg);
+    z-index: 0;
 }
 
 #left-pointer1{
@@ -489,8 +491,9 @@ progress::-webkit-progress-bar {
     background-color: #ffffff;
     position: absolute;
     left: 54px;
-    top: 315.5px;
+    top: 270.5px;
     transform: rotate(45deg);
+    z-index: 0;
 }
 
 #right-pointer2{
@@ -499,59 +502,54 @@ progress::-webkit-progress-bar {
     background-color: #ffffff;
     position: absolute;
     left: -70px;
-    top: 472.5px;
+    top: 443.5px;
     transform: rotate(45deg);
-}
-
-@media (max-width:360px){
-    #straight-line{
-        left: 20px;
-    }
-    
-    .edu{
-        left: 40px;
-        width: 250px;
-    }
+    z-index: 0;
 }
 
 @media (min-width:770px) and (max-width:992px){
     #college-edu{
         left: -310px;
-        top: 95.5px;
+        top: 50.5px;
     }
 
     .edu{
         width: 250px;
     }
 
+    #inter-edu{
+        left: 64px;
+        top: 210px;
+    }
+
     #school-edu{
-        top: 400.5px;
+        top: 382.5px;
         left: -310px;
     }
 }
 
-@media (min-width:360px) and (max-width:770px){
+@media (max-width:770px){
     #straight-line{
         left: 20px;
     }
     #college-edu{
-        left: 64px;
-        top: 95.5px;
+        left: 46px;
+        top: 50.5px;
         width: 250px;
     }
     #inter-edu{
-        left: 64px;
-        top: 250px;
+        left: 46px;
+        top: 213px;
         width: 250px;
     }
     #school-edu{
-        left: 64px;
-        top: 405.5px;
+        left: 46px;
+        top: 377.5px;
         width: 250px;
     }
 
-    #right-pointer1,#right-pointer2{
-        left: 54px;
+    #right-pointer1,#right-pointer2,#left-pointer1{
+        left: 36px;
     }
 }
 
