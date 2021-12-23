@@ -156,7 +156,7 @@ body,html {
 
 #bar1{
     width: 20px;
-    transform: rotate(-45deg) translate(-1px,-3px);
+    transform: rotate(-45deg) translate(-0.5px,-3px);
 }
 
 #bar3{
@@ -403,7 +403,7 @@ progress::-webkit-progress-bar {
 
 .down-bar1{
     width: 10px;
-    transform: rotate(45deg) translate(0px,-3px);
+    transform: rotate(45deg) translate(0.5px,-3px);
 }
 
 .down-bar2{
