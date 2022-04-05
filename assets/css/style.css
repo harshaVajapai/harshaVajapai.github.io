@@ -561,9 +561,13 @@ progress::-webkit-progress-bar {
     height: 100%;
 }
 
-.project-cards{
-    
+.img-fluid{
+    height: 300px;
+}
+
+.card-body .btn{
     background-color: #18d26e;
+    
 }
 
 /* projects page stying ends */
