@@ -26,14 +26,14 @@
         <div class="overlay-content">
             <button class="hide-nav-link active home" onclick="loadContent(event,'home')">Home</button>
             <button class="hide-nav-link about" onclick="loadContent(event,'about')">About</button>
-            <button class="hide-nav-link projects">Projects</button>
+            <button class="hide-nav-link projects" onclick="loadContent(event,'projects')">Projects</button>
             <button class="hide-nav-link contact" onclick="loadContent(event,'contact')">Contact</button>
         </div>
     </div>
     <div class="nav-bar">
         <button class="navlink active home" onclick="loadContent(event,'home')">Home</button>
         <button class="navlink about" onclick="loadContent(event,'about')">About</button>
-        <button class="navlink projects">Projects</button>
+        <button class="navlink projects" onclick="loadContent(event,'projects')">Projects</button>
         <button class="navlink contact" onclick="loadContent(event,'contact')">Contact</button>
     </div>
     <div id="arrow" onclick="topFunction()">
@@ -180,7 +180,7 @@
                                 <h5>IIITDM Kancheepuram</h3>
                                     <p style="margin: 0px;">Computer Science and Engineering</p>
                                     <p style="margin: 0px;">2019 - <em>present</em> | Chennai,India.</p>
-                                    <p style="margin: 0px;">Current CGPA - 7.86</p>
+                                    <p style="margin: 0px;">Current CGPA - 7.91</p>
                             </div>
                             <div id="right-pointer1"></div>
                         </div>
@@ -209,6 +209,19 @@
                             <div id="right-pointer2"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="content">
+        <div id="outer-container" class="container-fluid">
+            <div id="inner-container" class="container-fluid">
+                <h1>Projects</h1>
+                <div class="row justify-content-around">
+                    <div class="col-md-3 project-cards"></div>
+                    <div class="col-md-3 project-cards"></div>
+                    <div class="col-md-3 project-cards"></div>
                 </div>
             </div>
         </div>

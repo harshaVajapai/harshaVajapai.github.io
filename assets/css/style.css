@@ -238,7 +238,7 @@ body,html {
     height: fit-content;
     padding: 80px 0px 50px 0px;
     display: none;
-    background: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("../imgs/about-bg.jpg");
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -253,7 +253,7 @@ body,html {
 
 #profile{
     height: fit-content;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255,255,255,0.09);
 }
 
 #about-heading{
@@ -286,7 +286,7 @@ body,html {
 #skills{
     margin-top: 30px;
     height: fit-content;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255,255,255,0.09);
     padding: 10px;
 }
 
@@ -354,7 +354,7 @@ progress::-webkit-progress-bar {
 #education{
     padding: 30px;
     margin-top: 30px;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255,255,255,0.09);
     position: relative;
     overflow: hidden;
 }
@@ -553,20 +553,30 @@ progress::-webkit-progress-bar {
     }
 }
 
+/* projects page styling starts */
+
+#projects{
+    background-color: #000000;
+    display: none;
+    height: 100%;
+}
+
+.project-cards{
+    
+    background-color: #18d26e;
+}
+
+/* projects page stying ends */
+
 
 
 /* contact page styling starts */
 
 #contact{
-    background: url("../imgs/contact-bg.jpg");
+    /* background: url("../imgs/contact-bg.jpg"); */
+    background-color: #000000;
     display: none;
     height: 100%;
-    /* Center and scale the image nicely */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-delay: 1s;
 }
 
 #outer-container{
